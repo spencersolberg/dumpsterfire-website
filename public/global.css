@@ -1,0 +1,26 @@
+body {
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  color: orange;
+}
+
+p,
+a {
+  font-weight: 400;
+}
+
+nav a {
+  background-color: green;
+}
+
+.fa-dumpster-fire {
+  color: green;
+}
+
+.routelink {
+  color: white;
+}
