@@ -39,11 +39,7 @@
       <Link to="/dumpcast" onmousedown="party.confetti(this)"
         ><div class="routelink">Dumpcast</div></Link
       >
-      <Link
-        ><div class="routelink" on:click={scrollToBottom}>
-          Social Media
-        </div></Link
-      >
+      <a><div class="routelink" on:click={scrollToBottom}>Social Media</div></a>
       <!-- <Link to="/socialmedia" onmousedown="party.confetti(this)"
         ><div class="routelink">Social Media</div></Link
       > -->
