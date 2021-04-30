@@ -5,7 +5,6 @@
 
 <main>
   <h2>Here's the situation!</h2>
-  <br />
   <figure>
     <img
       src="https://file.coffee/u/2kUwEB-DK6.jpeg"
