@@ -6,6 +6,15 @@
   //   import SocialMedia from "./routes/SocialMedia.svelte";
 
   import Footer from "./components/Footer.svelte";
+  (function () {
+    var ticker = document.createElement("script");
+    ticker.async = true;
+    ticker.src = "https://embed.twitcker.com/ticker/dumpfiremusic.js";
+    (
+      document.getElementsByTagName("head")[0] ||
+      document.getElementsByTagName("body")[0]
+    ).appendChild(ticker);
+  })();
 </script>
 
 <Router>
@@ -45,4 +54,7 @@
   /* h1 {
     font-family: "Rock Salt", cursive;
   } */
+  #twitcker-bar div.box {
+    background: color(#ffa500);
+  }
 </style>
