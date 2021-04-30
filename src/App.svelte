@@ -15,6 +15,10 @@
       document.getElementsByTagName("body")[0]
     ).appendChild(ticker);
   })();
+
+  const scrollToBottom = () => {
+    window.scrollTo(0, document.body.scrollHeight);
+  };
 </script>
 
 <Router>
@@ -34,6 +38,11 @@
       >
       <Link to="/dumpcast" onmousedown="party.confetti(this)"
         ><div class="routelink">Dumpcast</div></Link
+      >
+      <Link
+        ><div class="routelink" on:click={scrollToBottom}>
+          Social Media
+        </div></Link
       >
       <!-- <Link to="/socialmedia" onmousedown="party.confetti(this)"
         ><div class="routelink">Social Media</div></Link
