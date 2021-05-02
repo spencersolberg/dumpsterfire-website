@@ -8,6 +8,7 @@
     style="width: 100%; max-width: 660px; overflow: hidden; border-radius: 10px; background: transparent none repeat scroll 0% 0%;"
     height="450px"
     frameborder="0"
+    loading="lazy"
   />
   <h2>Spotify</h2>
   <iframe
@@ -18,6 +19,7 @@
     frameborder="0"
     allowtransparency="true"
     allow="encrypted-media"
+    loading="lazy"
   />
   <h2>YouTube</h2>
   <iframe
@@ -28,6 +30,7 @@
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen
+    loading="lazy"
   />
   <h2>SoundCloud</h2>
   <iframe
@@ -38,6 +41,7 @@
     frameborder="no"
     allow="autoplay"
     src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1049444974&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+    loading="lazy"
   />
   <div
     style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"

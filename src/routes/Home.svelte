@@ -9,6 +9,7 @@
     <img
       src="images/dumpsterfirewithjustin.webp"
       alt="The dumpster fire boys with Justin Crichfield"
+      loading="lazy"
     />
     <figcaption>
       The Dumpster Fire boys with Justin Crichfield (middle).
@@ -36,6 +37,7 @@
     <img
       src="images/dumpsterfire3.webp"
       alt="Three of the Dumpster Fire boys sitting down."
+      loading="lazy"
     />
     <figcaption>
       Three members of Dumpster Fire while they were on tour. Unfortanately,
