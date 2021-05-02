@@ -7,6 +7,7 @@
   <h2>Here's the situation!</h2>
   <figure>
     <img
+      class="dumpsterfirewithjustin"
       src="images/dumpsterfirewithjustin.webp"
       alt="The dumpster fire boys with Justin Crichfield"
       loading="lazy"
@@ -35,6 +36,7 @@
   </ul>
   <figure>
     <img
+      class="dumpsterfire3"
       src="images/dumpsterfire3.webp"
       alt="Three of the Dumpster Fire boys sitting down."
       loading="lazy"
@@ -51,3 +53,12 @@
   </p>
   <MaskRaffle />
 </main>
+
+<style>
+  .dumpsterfire3 {
+    aspect-ratio: 1/1;
+  }
+  .dumpsterfirewithjustin {
+    aspect-ratio: 1080/898;
+  }
+</style>
