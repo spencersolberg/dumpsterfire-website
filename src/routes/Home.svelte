@@ -7,7 +7,7 @@
   <h2>Here's the situation!</h2>
   <figure>
     <img
-      src="https://file.coffee/u/2kUwEB-DK6.jpeg"
+      src="images/dumpsterfirewithjustin.webp"
       alt="The dumpster fire boys with Justin Crichfield"
     />
     <figcaption>
@@ -34,7 +34,7 @@
   </ul>
   <figure>
     <img
-      src="https://file.coffee/u/tyU0NAprIw.jpeg"
+      src="images/dumpsterfire3.webp"
       alt="Three of the Dumpster Fire boys sitting down."
     />
     <figcaption>

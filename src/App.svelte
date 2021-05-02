@@ -3,7 +3,6 @@
   import Home from "./routes/Home.svelte";
   import Music from "./routes/Music.svelte";
   import Dumpcast from "./routes/Dumpcast.svelte";
-  //   import SocialMedia from "./routes/SocialMedia.svelte";
 
   import Footer from "./components/Footer.svelte";
   (function () {
@@ -40,26 +39,16 @@
         ><div class="routelink">Dumpcast</div></Link
       >
       <a><div class="routelink" on:click={scrollToBottom}>Social Media</div></a>
-      <!-- <Link to="/socialmedia" onmousedown="party.confetti(this)"
-        ><div class="routelink">Social Media</div></Link
-      > -->
     </nav>
   </header>
   <div>
     <Route path="/" component={Home} />
     <Route path="/music" component={Music} />
     <Route path="/dumpcast" component={Dumpcast} />
-    <!-- <Route path="/socialmedia" component={SocialMedia} /> -->
   </div>
 </Router>
 
 <Footer />
 
 <style>
-  /* h1 {
-    font-family: "Rock Salt", cursive;
-  } */
-  #twitcker-bar div.box {
-    background: color(#ffa500);
-  }
 </style>
