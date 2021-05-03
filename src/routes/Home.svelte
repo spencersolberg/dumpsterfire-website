@@ -42,7 +42,7 @@
       loading="lazy"
     />
     <figcaption>
-      Three members of Dumpster Fire while they were on tour. Unfortanately,
+      Three members of Dumpster Fire while they were on tour. Unfortunately,
       Spencer Sveen was hit by a bus and was not in this photo.
     </figcaption>
   </figure>

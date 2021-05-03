@@ -38,6 +38,7 @@
       <Link to="/dumpcast" onmousedown="party.confetti(this)"
         ><div class="routelink">Dumpcast</div></Link
       >
+      <!-- svelte-ignore a11y-missing-attribute -->
       <a><div class="routelink" on:click={scrollToBottom}>Social Media</div></a>
     </nav>
   </header>
