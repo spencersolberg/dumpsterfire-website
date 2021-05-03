@@ -3,52 +3,80 @@
     <li>
       <a
         href="https://www.instagram.com/dumpsterfiremusic"
-        class="logo-instagram"><i class="fab fa-instagram" /></a
+        class="logo-instagram"
+        title="Instagram"
       >
+        <ion-icon name="logo-instagram" />
+      </a>
     </li>
     <li>
       <a
         href="https://www.youtube.com/channel/UCUvO8Nw5ijE2XVi110XOw7Q"
-        class="logo-youtube"><i class="fab fa-youtube" /></a
+        class="logo-youtube"
+        title="YouTube"
       >
+        <ion-icon name="logo-youtube" />
+      </a>
     </li>
     <li>
-      <a href="https://discord.gg/A5sdKJt6Ah" class="logo-discord"
-        ><i class="fab fa-discord" /></a
-      >
-    </li>
-    <li>
-      <a href="https://twitter.com/dumpfiremusic" class="logo-twitter"
-        ><i class="fab fa-twitter" /></a
-      >
-    </li>
-    <li>
-      <a href="https://www.tiktok.com/@dumpsterfiremusic" class="logo-tiktok"
-        ><i class="fab fa-tiktok" /></a
-      >
-    </li>
-    <li>
-      <a href="https://snapchat.com/add/dumpfiremusic" class="logo-snap"
-        ><i class="fab fa-snapchat-ghost" /></a
-      >
-    </li>
-    <li>
-      <a href="https://www.reddit.com/r/dumpsterfiremusic" class="logo-reddit"
-        ><i class="fab fa-reddit-alien" /></a
-      >
-    </li>
-    <li>
-      <a href="https://twitch.tv/dumpsterfirestreams" class="logo-twitch"
-        ><i class="fab fa-twitch" /></a
-      >
-    </li>
-    <!-- <li>
       <a
-        
-        href="https://honk.me/dumpsterfire"
-        class="logo-honk"
-      />
-    </li> -->
+        href="https://discord.gg/A5sdKJt6Ah"
+        class="logo-discord"
+        title="Discord"
+      >
+        <ion-icon name="logo-discord" />
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://twitter.com/dumpfiremusic"
+        class="logo-twitter"
+        title="Twitter"
+      >
+        <ion-icon name="logo-twitter" />
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://www.tiktok.com/@dumpsterfiremusic"
+        class="logo-tiktok"
+        title="TikTok"
+      >
+        <ion-icon name="logo-tiktok" />
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://snapchat.com/add/dumpfiremusic"
+        class="logo-snap"
+        title="Snapchat"
+      >
+        <ion-icon name="logo-snapchat" />
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://www.reddit.com/r/dumpsterfiremusic"
+        class="logo-reddit"
+        title="Reddit"
+      >
+        <ion-icon name="logo-reddit" />
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://twitch.tv/dumpsterfirestreams"
+        class="logo-twitch"
+        title="Twitch"
+      >
+        <ion-icon name="logo-twitch" />
+      </a>
+    </li>
+    <li>
+      <a href="https://honk.me/dumpsterfire" class="logo-honk" title="Honk">
+        <ion-icon src="images/honk.svg" />
+      </a>
+    </li>
   </ul>
   Dumpster Fire © 2021
 </footer>
@@ -101,7 +129,11 @@
     color: #ff5700;
   }
 
-  /* .logo-honk:hover {
-    color: blue;
-  } */
+  .logo-honk:hover {
+    color: #018dff;
+  }
+
+  ion-icon {
+    pointer-events: none;
+  }
 </style>
