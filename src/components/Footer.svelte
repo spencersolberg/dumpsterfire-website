@@ -1,3 +1,15 @@
+<script>
+function repion() {
+  let ionicons = document.querySelectorAll('ion-icon');
+  ionicons.forEach(icon => {
+    let properTitle = icon.getAttribute('title');
+    if (properTitle) {
+      icon.shadowRoot.querySelector('.icon-inner svg title').innerHTML = properTitle
+    }
+  });
+}
+</script>
+
 <footer>
   <ul class="social-media-list">
     <li>
@@ -6,7 +18,7 @@
         class="logo-instagram"
         title="Instagram"
       >
-        <ion-icon name="logo-instagram" />
+        <ion-icon name="logo-instagram" title="Instagram"/>
       </a>
     </li>
     <li>
@@ -73,7 +85,7 @@
       </a>
     </li>
     <li>
-      <a href="https://honk.me/dumpsterfire" class="logo-honk" title="Honk">
+      <a href="https://honk.me/dumpsterfire" class="logo-honk" title="Logo Honk">
         <ion-icon src="images/honk.svg" />
       </a>
     </li>
@@ -133,7 +145,7 @@
     color: #018dff;
   }
 
-  ion-icon {
+  /* ion-icon {
     pointer-events: none;
-  }
+  } */
 </style>
