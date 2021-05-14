@@ -1,7 +1,7 @@
 <main>
   <h2>Dumpcast is the official Dumpster Fire podcast!</h2>
   <br>
-  <iframe title="Dumpcast" src="https://pod.link/dumpcast" frameborder="0" width="100%" height="1000em"></iframe>
+  <iframe title="Dumpcast" seamless src="/dumpcast.html" frameborder="0" width="100%" height="1000em"></iframe>
   <!-- <h2>Apple Podcasts</h2>
   <iframe
     title="Apple Podcasts"
@@ -70,7 +70,7 @@
       >RSS feed</a
     >
   </h3> -->
-  <br />
+  <!-- <br /> -->
   <h3>If you're interested in applying for Dumpcast...</h3>
   <p>You can do so with the form below:</p>
   <a href="/dumpcastform.pdf">Dumpcast Registration Form</a>
