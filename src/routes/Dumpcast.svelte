@@ -1,5 +1,5 @@
 <main>
-  <h1>Dumpcast is the official Dumpster Fire podcast!</h1>
+  <h2>Dumpcast is the official Dumpster Fire podcast!</h2>
   <br>
   <iframe title="Dumpcast" src="https://pod.link/dumpcast" frameborder="0" width="100%" height="1000em"></iframe>
   <!-- <h2>Apple Podcasts</h2>
