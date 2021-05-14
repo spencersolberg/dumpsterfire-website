@@ -1,5 +1,8 @@
 <main>
-  <h2>Apple Podcasts</h2>
+  <h1>Dumpcast is the official Dumpster Fire podcast!</h1>
+  <br>
+  <iframe title="Dumpcast" src="https://pod.link/dumpcast" frameborder="0" width="100%" height="1000em"></iframe>
+  <!-- <h2>Apple Podcasts</h2>
   <iframe
     title="Apple Podcasts"
     src="https://embed.podcasts.apple.com/us/podcast/dumpcast/id1561702231?itsct=podcast_box&amp;itscg=30200&amp;theme=auto"
@@ -66,7 +69,7 @@
       href="https://feeds.soundcloud.com/users/soundcloud:users:784452757/sounds.rss"
       >RSS feed</a
     >
-  </h3>
+  </h3> -->
   <br />
   <h3>If you're interested in applying for Dumpcast...</h3>
   <p>You can do so with the form below:</p>
