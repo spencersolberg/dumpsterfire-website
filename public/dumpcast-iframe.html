@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>dumpcast</title>
+  <link rel='shortcut icon' type='image/png' href='https://pod.link/assets/favicon.png' />
+  <link rel="manifest" href="https://pod.link/manifest.json">
+  <link rel="search" href="https://pod.link/assets/opensearch.xml" type="application/opensearchdescription+xml"
+    title="Search pod.link">
+  </link>
+  <meta name="twitter:title" content="dumpcast">
+  <meta property="og:title" content="dumpcast">
+  <meta name="description" content="Podcast by Dumpster Fire" />
+  <meta property="og:description" content="Podcast by Dumpster Fire">
+  <meta name="twitter:description" content="Podcast by Dumpster Fire">
+
+  <meta property="og:image:width" content="1280" />
+  <meta property="og:image:height" content="720" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="og:image"
+    content="https://podlink.imgix.net/ada08cfc02b8c664a32e5f9cd3ba0390/poster.jpeg?width=1280&height=720&fit=fill&pad=104&bg=060606" />
+  <meta property="og:image:alt" content="dumpcast" />
+  <meta name="twitter:image"
+    content="https://podlink.imgix.net/ada08cfc02b8c664a32e5f9cd3ba0390/poster.jpeg?width=1280&height=720&fit=fill&pad=104&bg=060606" />
+  <meta name="twitter:image:alt" content="dumpcast" />
+
+  <style type="text/css" data-fela-rehydration="176" data-fela-type="STATIC">
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+      border: 0;
+      font-family: inherit;
+      font-size: 100%;
+      margin: 0;
+      padding: 0;
+      vertical-align: baseline;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    input[type="text"],
+    input[type="number"] {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+
+    input,
+    button {
+      background: none;
+      border: 0;
+      font-family: inherit;
+      font-size: inherit;
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body {
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      color: #1b1f23;
+      font-family: 'Larsseit', 'Helvetica Neue', Helvetica, 'Segoe UI', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      height: 100%;
+      line-height: 1.4;
+      margin: 0;
+      min-height: 100vh;
+      padding: 0;
+      width: 100%;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: border-box;
+    }
+
+    #root {
+      height: 100%;
+    }
+
+    @font-face {
+      font-family: 'Larsseit';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url('https://pod.link/assets/fonts/Larsseit-Regular.otf') format('opentype');
+    }
+
+    @font-face {
+      font-family: 'Larsseit';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url('https://pod.link/assets/fonts/Larsseit-Medium.otf') format('opentype');
+    }
+
+    @font-face {
+      font-family: 'Larsseit';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url('https://pod.link/assets/fonts/Larsseit-Bold.otf') format('opentype');
+    }
+
+    .grecaptcha-badge {
+      visibility: hidden;
+    }
+
+    .react-colorful {
+      cursor: default;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      position: relative;
+      user-select: none;
+      width: 100%;
+    }
+
+    .react-colorful__saturation {
+      position: relative;
+      flex-grow: 1;
+      border-bottom: 12px solid #000;
+      border-radius: 8px 8px 0 0;
+      background-image: linear-gradient(to top, #000, rgba(0, 0, 0, 0)), linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
+    }
+
+    .react-colorful__pointer-fill,
+    .react-colorful__alpha-gradient {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      pointer-events: none;
+      border-radius: inherit;
+    }
+
+    /* Improve elements rendering on light backgrounds */
+    .react-colorful__alpha-gradient,
+    .react-colorful__saturation {
+      box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05);
+    }
+
+    .react-colorful__hue,
+    .react-colorful__alpha {
+      position: relative;
+      height: 24px;
+    }
+
+    .react-colorful__hue {
+      background: linear-gradient(to right, #f00 0%, #ff0 17%, #0f0 33%, #0ff 50%, #00f 67%, #f0f 83%, #f00 100%);
+    }
+
+    /* Round bottom corners of the last element: 'Hue' for 'ColorPicker' or 'Alpha' for 'AlphaColorPicker' */
+    .react-colorful__last-control {
+      border-radius: 0 0 8px 8px;
+    }
+
+    .react-colorful__interactive {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: inherit;
+      outline: none;
+      /* Don't trigger the default scrolling behavior when the event is originating from this element */
+      touch-action: none;
+    }
+
+    .react-colorful__pointer {
+      position: absolute;
+      z-index: 1;
+      box-sizing: border-box;
+      width: 28px;
+      height: 28px;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .react-colorful__interactive:focus .react-colorful__pointer {
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+
+    /* Chessboard-like pattern for alpha related elements */
+    .react-colorful__alpha,
+    .react-colorful__alpha-pointer {
+      background-color: #fff;
+      background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill-opacity=".05"><rect x="8" width="8" height="8"/><rect y="8" width="8" height="8"/></svg>');
+    }
+
+    /* Display the saturation pointer over the hue one */
+    .react-colorful__saturation-pointer {
+      z-index: 3;
+    }
+
+    /* Display the hue pointer over the alpha one */
+    .react-colorful__hue-pointer {
+      z-index: 2;
+    }
+  </style>
+  <style type="text/css" data-fela-rehydration="176" data-fela-type="RULE">
+    .a {
+      background-color: #060606
+    }
+
+    .b {
+      color: #eff6fd
+    }
+
+    .c {
+      display: flex
+    }
+
+    .d {
+      flex-direction: column
+    }
+
+    .e {
+      height: auto
+    }
+
+    .f {
+      height: 100%
+    }
+
+    .h {
+      margin: 0 auto
+    }
+
+    .i {
+      max-width: 992px
+    }
+
+    .j {
+      align-items: center
+    }
+
+    .k {
+      contain: paint
+    }
+
+    .l {
+      flex-shrink: 0
+    }
+
+    .m {
+      background: #060606
+    }
+
+    .n {
+      height: 3.5rem
+    }
+
+    .o {
+      padding: 0 0.75rem 0 1.125rem
+    }
+
+    .p {
+      position: sticky
+    }
+
+    .q {
+      z-index: 1
+    }
+
+    .r {
+      top: 0
+    }
+
+    .s svg {
+      color: #FE9C30
+    }
+
+    .t {
+      cursor: pointer
+    }
+
+    .u {
+      font-size: 1.125rem
+    }
+
+    .v {
+      font-weight: 700
+    }
+
+    .w {
+      margin-right: auto
+    }
+
+    .x {
+      overflow: hidden
+    }
+
+    .y {
+      text-overflow: ellipsis
+    }
+
+    .z {
+      white-space: nowrap
+    }
+
+    .ab {
+      width: 100%
+    }
+
+    .ac {
+      background: #FE9C30
+    }
+
+    .ae {
+      bottom: 0
+    }
+
+    .af {
+      color: #FF595D
+    }
+
+    .ag {
+      font-weight: 500
+    }
+
+    .ah {
+      justify-content: center
+    }
+
+    .ai {
+      left: 0
+    }
+
+    .aj {
+      opacity: 0
+    }
+
+    .ak {
+      padding: 0 1.125rem
+    }
+
+    .al {
+      pointer-events: none
+    }
+
+    .am {
+      position: absolute
+    }
+
+    .an {
+      right: 0
+    }
+
+    .ao {
+      transition: opacity .3s linear
+    }
+
+    .ar {
+      background: none
+    }
+
+    .as {
+      border: 0
+    }
+
+    .at {
+      color: inherit
+    }
+
+    .au {
+      display: inline-flex
+    }
+
+    .av {
+      outline: 0
+    }
+
+    .aw {
+      padding: 0.375rem
+    }
+
+    .ax svg {
+      width: 1.75rem
+    }
+
+    .ay svg {
+      height: 1.75rem
+    }
+
+    .ba {
+      margin-right: 0.625rem
+    }
+
+    .bb {
+      justify-content: space-between
+    }
+
+    .bc {
+      margin-bottom: 1rem
+    }
+
+    .bd {
+      display: grid
+    }
+
+    .be {
+      grid-gap: 1.25rem
+    }
+
+    .bf {
+      grid-template-columns: max-content 1fr
+    }
+
+    .bg {
+      min-width: 0
+    }
+
+    .bh {
+      margin-bottom: 0.25rem
+    }
+
+    .bi {
+      font-size: 1.25rem
+    }
+
+    .bj {
+      line-height: 1.25
+    }
+
+    .bk {
+      grid-gap: 0.75rem
+    }
+
+    .bl {
+      grid-template-columns: 1fr max-content
+    }
+
+    .bm {
+      margin-top: 1rem
+    }
+
+    .bn {
+      position: relative
+    }
+
+    .bo {
+      border-radius: 2rem
+    }
+
+    .bp {
+      font-family: inherit
+    }
+
+    .bq {
+      font-size: inherit
+    }
+
+    .br {
+      padding: 0.625rem 1rem 0.75rem
+    }
+
+    .bs {
+      font-size: 0.8125rem
+    }
+
+    .bt {
+      margin: auto
+    }
+
+    .bu {
+      padding: 0 1rem 0
+    }
+
+    .cd {
+      align-items: start
+    }
+
+    .ce {
+      grid-gap: 2rem
+    }
+
+    .cf {
+      padding: 1.125rem
+    }
+
+    .cg {
+      grid-template-areas: "cover"
+        "detail"
+        "apps"
+        "episodes"
+        "footer"
+    }
+
+    .ck {
+      grid-area: cover
+    }
+
+    .cn {
+      grid-area: detail
+    }
+
+    .co {
+      font-size: 2rem
+    }
+
+    .cp {
+      line-height: 1.18
+    }
+
+    .cr {
+      font-size: 14px
+    }
+
+    .cs {
+      margin-top: 0.3125rem
+    }
+
+    .ct {
+      padding: 0.25rem 0.625rem
+    }
+
+    .cu {
+      background: #eff6fd
+    }
+
+    .cv {
+      color: #060606
+    }
+
+    .cw {
+      grid-area: apps
+    }
+
+    .cx {
+      margin: 0 0 0.5rem 0
+    }
+
+    .cy {
+      grid-area: episodes
+    }
+
+    .db {
+      padding: 1rem
+    }
+
+    .dc {
+      text-align: center
+    }
+
+    .dd {
+      grid-area: footer
+    }
+
+    .de {
+      opacity: 1
+    }
+
+    .df {
+      transition: opacity .4s
+    }
+
+    .dg {
+      border-radius: 1.5rem
+    }
+
+    .dh {
+      height: 14rem
+    }
+
+    .di {
+      width: 14rem
+    }
+
+    .dm {
+      margin-top: 0.75rem
+    }
+
+    .dn {
+      opacity: 0.8
+    }
+
+    .do {
+      word-break: break-word
+    }
+
+    .dp {
+      margin-left: -1.125rem
+    }
+
+    .dq {
+      padding: 0.5rem 1.125rem
+    }
+
+    .dr {
+      width: calc(100% + 2.250rem)
+    }
+
+    .dv {
+      padding-right: 1rem
+    }
+
+    .dx {
+      height: 3.25rem
+    }
+
+    .dy {
+      padding: 0
+    }
+
+    .dz {
+      transition: transform .2s ease
+    }
+
+    .ea {
+      width: 3.25rem
+    }
+
+    .ec {
+      border-radius: 1.25rem
+    }
+
+    .ed {
+      grid-gap: .625rem
+    }
+
+    .ee {
+      grid-template-columns: 2.25rem 1fr
+    }
+
+    .ef {
+      transition: all .2s linear
+    }
+
+    .ei {
+      border-radius: 50%
+    }
+
+    .ej {
+      height: 2.25rem
+    }
+
+    .ek {
+      margin-top: 0.0625rem
+    }
+
+    .el {
+      width: 2.25rem
+    }
+
+    .em svg {
+      color: #060606
+    }
+
+    .en {
+      line-height: 1.3
+    }
+
+    .eo {
+      margin-bottom: 0.5rem
+    }
+
+    .eq {
+      font-size: 0.875rem
+    }
+
+    .er {
+      margin-top: 0.25rem
+    }
+
+    .es svg {
+      width: 1.5rem
+    }
+
+    .et svg {
+      height: 1.5rem
+    }
+
+    .eu {
+      margin-left: 0.125rem
+    }
+
+    .ev {
+      padding: 0 0 .5rem 0
+    }
+
+    .ey {
+      flex-wrap: wrap
+    }
+
+    .ez {
+      margin: 0.1875rem 0.375rem
+    }
+
+    .fa svg {
+      width: 5rem
+    }
+
+    .fb svg {
+      height: 5rem
+    }
+
+    .fg {
+      text-decoration: none
+    }
+
+    .fi {
+      border-radius: 1rem 1rem 0 0
+    }
+
+    .fj {
+      grid-gap: 0.625rem
+    }
+
+    .fk {
+      grid-template-columns: auto 1fr auto
+    }
+
+    .fl {
+      height: 5rem
+    }
+
+    .fm {
+      padding: 0.625rem 1.125rem
+    }
+
+    .fn {
+      position: fixed
+    }
+
+    .fp {
+      opacity: 0.75
+    }
+
+    .fq {
+      border-radius: 0.375rem
+    }
+
+    .fr {
+      height: 3rem
+    }
+
+    .fs {
+      width: 3rem
+    }
+
+    .ft svg {
+      width: 2rem
+    }
+
+    .fu svg {
+      height: 2rem
+    }
+
+    .eb:hover {
+      transform: scale(1.16667)
+    }
+
+    .fh:hover {
+      text-decoration: underline
+    }
+
+    .az:active {
+      opacity: 0.5
+    }
+  </style>
+  <style type="text/css" data-fela-rehydration="176" data-fela-type="RULE" media="(min-width: 992px)">
+    .aq {
+      font-size: 1.125rem
+    }
+
+    .bw {
+      background: #060606
+    }
+
+    .bx {
+      height: 3.5rem
+    }
+
+    .by {
+      margin: 0 auto
+    }
+
+    .bz {
+      max-width: 992px
+    }
+
+    .ca {
+      position: sticky
+    }
+
+    .cb {
+      top: 0
+    }
+
+    .cc {
+      width: 100%
+    }
+
+    .ch {
+      grid-gap: 2rem 3rem
+    }
+
+    .ci {
+      grid-template-columns: 19rem 1fr
+    }
+
+    .cj {
+      grid-template-areas: "cover detail"
+        "cover apps"
+        "cover episodes"
+        "cover footer"
+    }
+
+    .cm {
+      top: 4.625rem
+    }
+
+    .cq {
+      font-size: 3rem
+    }
+
+    .da {
+      margin: 0
+    }
+
+    .dk {
+      height: 19rem
+    }
+
+    .dl {
+      width: 19rem
+    }
+
+    .dw {
+      padding-bottom: 0.75rem
+    }
+
+    .eh {
+      padding: 1rem
+    }
+
+    .ew {
+      font-size: 0.9375rem
+    }
+
+    .ex {
+      padding: 2rem 0 2.5rem
+    }
+
+    .fd {
+      margin-bottom: 1.5rem
+    }
+
+    .fe svg {
+      height: 6.125rem
+    }
+
+    .ff svg {
+      width: 6.125rem
+    }
+
+    .fo {
+      display: none
+    }
+  </style>
+  <style type="text/css" data-fela-rehydration="176" data-fela-type="RULE" media="(max-width: 992px)">
+    .g {
+      margin-bottom: 5rem
+    }
+
+    .ap {
+      font-size: 1rem
+    }
+
+    .bv {
+      display: none
+    }
+
+    .cl {
+      justify-content: center
+    }
+
+    .cz {
+      margin: 0
+    }
+
+    .dj {
+      transition: transform .2s cubic-bezier(0.33, 1, 0.68, 1)
+    }
+
+    .ds {
+      display: flex
+    }
+
+    .dt {
+      overflow-x: auto
+    }
+
+    .du::-webkit-scrollbar {
+      display: none
+    }
+
+    .eg {
+      padding: 1rem 0
+    }
+
+    .ep {
+      font-size: 0.875rem
+    }
+
+    .fc {
+      margin-bottom: 1rem
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root">
+    <div class="f">
+      <div class="a b c d e">
+        <div class="j k c l m n o p q r s">
+          <a href="https://pod.link/dumpcast" target="_parent" style="text-decoration:none; color:white;"><div class="t u v w x y z ab">pod.link/dumpcast</div></a>
+          <!-- <button tabIndex="0"
+            class="ar as at au av aw ax ay t az ba" aria-label="Share"><svg viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M10.76 7.947l-.96.96c-.426.427-1.066.427-1.28.107a1.031 1.031 0 010-1.494l3.2-3.2a1.031 1.031 0 011.494 0l3.2 3.2a1.032 1.032 0 010 1.494 1.031 1.031 0 01-1.494 0l-.96-.96c-.106-.107-.213-.107-.32-.107a.23.23 0 00-.213.213v5.227c0 .64-.427 1.067-1.067 1.067-.64 0-1.066-.427-1.066-1.067V8.054a.23.23 0 00-.214-.214c-.106 0-.213 0-.32.107zM6.494 19.254c1.493 1.6 3.733 1.706 5.76 1.706 2.026 0 4.266-.106 5.76-1.706 1.386-1.494 1.493-3.627 1.493-5.44 0-.64-.427-1.067-1.067-1.067-.64 0-1.066.427-1.066 1.067 0 1.386-.107 2.986-.96 3.946-.854.96-2.667 1.067-4.16 1.067-1.494 0-3.307-.107-4.16-1.067-.854-.96-.96-2.56-.96-3.946 0-.64-.427-1.067-1.067-1.067-.64 0-1.067.427-1.067 1.067 0 1.813.107 3.946 1.494 5.44z"
+                fill="currentColor" />
+            </svg></button><button tabIndex="0" class="ar as at au av aw ax ay t az" aria-label="Search"><svg
+              viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M10.198 3a7.2 7.2 0 103.58 13.448c.445-.255 1.017-.222 1.38.143l4.082 4.106a1.029 1.029 0 101.46-1.45l-4.1-4.122c-.36-.361-.393-.928-.14-1.37A7.2 7.2 0 0010.198 3zm-5.143 7.2a5.143 5.143 0 1110.286 0 5.143 5.143 0 01-10.286 0z"
+                fill="currentColor" />
+            </svg></button> -->
+          <div class="j ac ae af c ag ah ai aj ak al am an r ao ap aq">pod.link copied!</div>
+        </div>
+        <div class="f g">
+          <div class="h i">
+            <div>
+              <div class="cd bd ce cf cg ch ci cj">
+                <div class="c ck cl ca cm"> <img class="de df as dg dh di dj dk dl" alt="dumpcast"
+                    src="https://podlink.imgix.net/ada08cfc02b8c664a32e5f9cd3ba0390/poster.jpeg?width=448&amp;auto=format" />
+                </div>
+                <div class="cn">
+                  <div class="co v cp cq">dumpcast</div>
+                  <div class="ag cr au bo cs ct cu cv">Dumpster Fire</div>
+                  <p class="dm"><span class="dn do">Podcast by Dumpster Fire</span></p>
+                </div>
+                <div class="cw bg">
+                  <h3 class="bi cx">Available on</h3>
+                  <div class="k dp dq dr ds dt du">
+                    <div class="au dv dw"><a target="_parent" href="https://pod.link/dumpcast.apple" class="ar as t au dx av dy dz ea eb"><img
+                          title="Apple Podcasts" alt="Apple Podcasts" src="https://pod.link/assets/apps/apple.svg" class="f ab" /></a>
+                    </div>
+                    <div class="au dv dw"><a target="_parent" href="https://pod.link/dumpcast.spotify" class="ar as t au dx av dy dz ea eb"><img
+                          title="Spotify" alt="Spotify" src="https://pod.link/assets/apps/spotify.svg" class="f ab" /></a></div>
+                    <div class="au dv dw"><a target="_parent" href="https://pod.link/dumpcast.google" class="ar as t au dx av dy dz ea eb"><img
+                          title="Google Podcasts" alt="Google Podcasts" src="https://pod.link/assets/apps/google.svg"
+                          class="f ab" /></a></div>
+                    <div class="au dv dw"><a target="_parent" href="https://pod.link/dumpcast.overcast" class="ar as t au dx av dy dz ea eb"><img
+                          title="Overcast" alt="Overcast" src="https://pod.link/assets/apps/overcast.svg" class="f ab" /></a></div>
+                    <div class="au dv dw"><a target="_parent" href="https://pod.link/dumpcast.stitcher" class="ar as t au dx av dy dz ea eb"><img
+                          title="Stitcher" alt="Stitcher" src="https://pod.link/assets/apps/stitcher.svg" class="f ab" /></a></div>
+                    <div class="au dv dw"><a target="_parent" href="https://pod.link/dumpcast.castbox" class="ar as t au dx av dy dz ea eb"><img
+                          title="Castbox" alt="Castbox" src="https://pod.link/assets/apps/castbox.svg" class="f ab" /></a></div>
+                    <div class="au dv dw"><a target="_parent" href="https://pod.link/dumpcast.castro" class="ar as t au dx av dy dz ea eb"><img
+                          title="Castro" alt="Castro" src="https://pod.link/assets/apps/castro.svg" class="f ab" /></a></div>
+                    <div class="au dv dw"><a target="_parent" href="https://pod.link/dumpcast.podcastaddict" class="ar as t au dx av dy dz ea eb"><img
+                          title="Podcast Addict" alt="Podcast Addict" src="https://pod.link/assets/apps/podcastaddict.svg"
+                          class="f ab" /></a></div>
+                    <div class="au dv dw"><a target="_parent" href="https://pod.link/dumpcast.pocketcasts" class="ar as t au dx av dy dz ea eb"><img
+                          title="Pocket Casts" alt="Pocket Casts" src="https://pod.link/assets/apps/pocketcasts.svg" class="f ab" /></a>
+                    </div>
+                    <div class="au dv dw"><a target="_parent" href="https://pod.link/dumpcast.iheartradio" class="ar as t au dx av dy dz ea eb"><img
+                          title="iHeartRadio" alt="iHeartRadio" src="https://pod.link/assets/apps/iheartradio.svg" class="f ab" /></a>
+                    </div>
+                    <div class="au dv dw"><a target="_parent" href="https://pod.link/dumpcast.playerfm" class="ar as t au dx av dy dz ea eb"><img
+                          title="Player FM" alt="Player FM" src="https://pod.link/assets/apps/playerfm.svg" class="f ab" /></a></div>
+                    <div class="au dv dw"><a target="_parent" href="https://pod.link/dumpcast.breaker" class="ar as t au dx av dy dz ea eb"><img
+                          title="Breaker" alt="Breaker" src="https://pod.link/assets/apps/breaker.svg" class="f ab" /></a></div>
+                    <div class="au dv dw"><a target="_parent" href="https://pod.link/dumpcast.radiopublic" class="ar as t au dx av dy dz ea eb"><img
+                          title="RadioPublic" alt="RadioPublic" src="https://pod.link/assets/apps/radiopublic.svg" class="f ab" /></a>
+                    </div>
+                    <div class="au dv dw"><a target="_parent" href="https://pod.link/dumpcast.rss" class="ar as t au dx av dy dz ea eb"><img title="RSS"
+                          alt="RSS" src="https://pod.link/assets/apps/rss.svg" class="f ab" /></a></div>
+                  </div>
+                </div>
+                <!-- <div class="cy">
+                  <h3 class="bi cz da">Episodes</h3>
+                  <div class="cd ec t bd ed ee ef eg eh">
+                    <div class="j ac ei t c ej ah ek el em"><button tabIndex="0" class="ar as at au av dy es et t az eu"
+                        aria-label="Play/Pause"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M7 6.05c0-.864.986-1.357 1.676-.839l7.683 5.762c.559.42.559 1.257 0 1.676l-7.683 5.762A1.048 1.048 0 017 17.573V6.05z"
+                            fill="currentColor" />
+                        </svg></button></div>
+                    <div>
+                      <div class="u ag en eo">Vote for Dumpster Fire!</div>
+                      <div class="do ep">
+                        <p><span class="dn do">In this latest installment, the Dumpster Fire boys discuss elections, the
+                            Travis Scott meal, and an upcoming project.</span></p>
+                        <div class="eq er dn">17 Sep 2020 · 26 minutes</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cd ec t bd ed ee ef eg eh">
+                    <div class="j ac ei t c ej ah ek el em"><button tabIndex="0" class="ar as at au av dy es et t az eu"
+                        aria-label="Play/Pause"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M7 6.05c0-.864.986-1.357 1.676-.839l7.683 5.762c.559.42.559 1.257 0 1.676l-7.683 5.762A1.048 1.048 0 017 17.573V6.05z"
+                            fill="currentColor" />
+                        </svg></button></div>
+                    <div>
+                      <div class="u ag en eo">Origami Shoes &amp; Swearing</div>
+                      <div class="do ep">
+                        <p><span class="dn do">In this episode, the Dumpster Fire boys are recording a virtual podcast
+                            episode.</span></p>
+                        <div class="eq er dn">25 Apr 2020 · 20 minutes</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cd ec t bd ed ee ef eg eh">
+                    <div class="j ac ei t c ej ah ek el em"><button tabIndex="0" class="ar as at au av dy es et t az eu"
+                        aria-label="Play/Pause"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M7 6.05c0-.864.986-1.357 1.676-.839l7.683 5.762c.559.42.559 1.257 0 1.676l-7.683 5.762A1.048 1.048 0 017 17.573V6.05z"
+                            fill="currentColor" />
+                        </svg></button></div>
+                    <div>
+                      <div class="u ag en eo">Deep Dive Into Anime with Justin Critchfield</div>
+                      <div class="do ep">
+                        <p><span class="dn do">Today’s Dumpster Fire features Justin Critchfield and discusses topics
+                            such as pizza flavors, lightbulb varieties, and Spencer’s Sveen’s mysterious
+                            ressurection.</span></p>
+                        <div class="eq er dn">04 Mar 2020 · 20 minutes</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cd ec t bd ed ee ef eg eh">
+                    <div class="j ac ei t c ej ah ek el em"><button tabIndex="0" class="ar as at au av dy es et t az eu"
+                        aria-label="Play/Pause"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M7 6.05c0-.864.986-1.357 1.676-.839l7.683 5.762c.559.42.559 1.257 0 1.676l-7.683 5.762A1.048 1.048 0 017 17.573V6.05z"
+                            fill="currentColor" />
+                        </svg></button></div>
+                    <div>
+                      <div class="u ag en eo">pilot</div>
+                      <div class="do ep">
+                        <p><span class="dn do">RIP bass</span></p>
+                        <div class="eq er dn">22 Feb 2020 · 20 minutes</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="db dc"></div>
+                </div> -->
+                <div class="dd">
+                  <div class="j b c d ev ab ep ew ex">
+                    <div class="ar as at au av dy fa fb fc fd fe ff"><svg viewBox="0 0 500 500" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M251.64 115.89V38M48.44 225.76l56.33 35.63m-5.56-64.94l26.75 44.78M44 284.2l51.66 7.12"
+                          stroke="currentColor" stroke-width="11.594" stroke-miterlimit="10" stroke-linecap="round" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M232.269 112.174L83.082 408.318l-.084.144a3.956 3.956 0 001.507 5.44l.001.001a3.958 3.958 0 005.29-1.366l149.062-295.405.082-.142c5.354-9.265 18.716-9.234 24.049.011l66.169 112.043 6.148-5.108-66.437-111.594-.02-.034c-8.122-14.07-28.38-14.115-36.58-.134zm118.068 114.345l-15.207 12.637 3.383 5.728 15.225-12.653-3.401-5.712zm3.401 5.712l-3.401-5.712 89.448-74.33.002-.002a3.278 3.278 0 014.623.427 3.288 3.288 0 01-.43 4.623l-.005.005-90.237 74.989zm-3.023 17.588l-6.23 5.177 71.636 121.298.018.033c5.226 9.115-1.184 20.431-11.553 20.782l-299.095 45.808h-.441a3.304 3.304 0 00-.332 6.589l299.932-45.823h.44c16.286 0 26.463-17.604 18.348-31.713l-72.723-122.151zm-12.202-4.935l-3.383-5.728-125.163 104.011a3.28 3.28 0 00-.43 4.626 3.28 3.28 0 004.626.43l.002-.002 124.348-103.337zm-18.387-8.334l-67.157-113.715-.019-.033c-.862-1.504-2.994-1.534-3.91-.11L99.98 418.091l-.084.144c-4.254 7.345-13.597 9.929-21.022 5.802-7.546-4.193-10.227-13.715-6.004-21.218l149.197-296.164.082-.143c12.605-21.833 44.096-21.845 56.721-.036l65.463 109.958 88.04-73.161.002-.002c6.325-5.258 15.699-4.385 20.952 1.932l.006.007c5.238 6.318 4.377 15.7-1.948 20.949l-.005.004m0 0l-91.638 76.154 73.699 123.791.02.034c12.534 21.712-2.958 48.803-27.911 49.132l-300.06 45.843h-.44c-8.218 0-14.897-6.661-14.897-14.897 0-8.066 6.4-14.629 14.403-14.889l299.093-45.808h.441c1.753 0 2.851-1.891 2.003-3.407l-70.64-119.614-113.876 94.635c-6.326 5.26-15.7 4.388-20.954-1.93-5.26-6.326-4.388-15.7 1.93-20.954l.002-.002 117.571-97.701"
+                          fill="currentColor" />
+                      </svg></div>
+                    <div class="c ey dn ah">
+                      <div class="ez">© 2021 pod.link</div><a href="https://pod.link/terms" class="at fg ez fh">Terms</a><a
+                        href="https://pod.link/privacy" class="at fg ez fh">Privacy</a><a href="https://twitter.com/_PodLink"
+                        class="at fg ez fh" rel="noopener" target="_blank">Twitter</a><a
+                        href="mailto:hello@pod.link" class="at fg ez fh">Contact</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div></div>
+          </div>
+        </div>
+        <!-- <div class="j ac fi ae af t bd fj fk fl ai fm fn an fo"> <img class="de df as fq fr fs" alt="dumpcast"
+            src="https://podlink.imgix.net/ada08cfc02b8c664a32e5f9cd3ba0390/poster.jpeg?width=448&amp;auto=format" />
+          <div class="bg">
+            <div class="x y z">Vote for Dumpster Fire!</div>
+            <div class="x y z fp">dumpcast</div>
+          </div><button tabIndex="0" class="ar as af au av dy ft fu t az" aria-label="Play/Pause"><svg
+              viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M7 6.05c0-.864.986-1.357 1.676-.839l7.683 5.762c.559.42.559 1.257 0 1.676l-7.683 5.762A1.048 1.048 0 017 17.573V6.05z"
+                fill="currentColor" />
+            </svg></button>
+        </div> -->
+      </div>
+    </div><audio preload="metadata" src></audio>
+  </div>
+  <script type="module" src="https://pod.link/client.0.2.21.js" async></script>
+  <script>
+    window.RECAPTCHA_SITE_KEY = "6LcX9EUaAAAAAFxAw8mJBOoEisWlPWdJScsz0pn8";
+    window.__STATE__ = { "url": "/dumpcast", "feed": { "id": "dumpcast", "episodes": [{ "description": "In this latest installment, the Dumpster Fire boys discuss elections, the Travis Scott meal, and an upcoming project.", "episodeId": "ecbac46864b2aa188c15354779c55dc2", "guid": "tag:soundcloud,2010:tracks/894778813", "title": "Vote for Dumpster Fire!", "published": "2020-09-17T13:39:08.000Z", "duration": 1591, "explicit": false, "enclosure": { "filesize": 25464162, "type": "audio/mpeg", "url": "https://feeds.soundcloud.com/stream/894778813-user-736900638-vote-for-dumpster-fire.mp3" }, "image": "https://i1.sndcdn.com/artworks-LC9BVHRd50LWU63V-QDTY6A-t3000x3000.jpg", "links": [] }, { "description": "In this episode, the Dumpster Fire boys are recording a virtual podcast episode.", "episodeId": "60cc663f35527721e91b756218923fa4", "guid": "tag:soundcloud,2010:tracks/807039301", "title": "Origami Shoes & Swearing", "published": "2020-04-25T19:46:17.000Z", "duration": 1200, "explicit": false, "enclosure": { "filesize": 20331279, "type": "audio/mpeg", "url": "https://feeds.soundcloud.com/stream/807039301-user-736900638-origami-shoes-swearing.mp3" }, "image": "https://i1.sndcdn.com/artworks-LC9BVHRd50LWU63V-QDTY6A-t3000x3000.jpg", "links": [] }, { "description": "Today’s Dumpster Fire features Justin Critchfield and discusses topics such as pizza flavors, lightbulb varieties, and Spencer’s Sveen’s mysterious ressurection.", "episodeId": "fe28d601d9f7f0b5fe66fd77bec548eb", "guid": "tag:soundcloud,2010:tracks/770916088", "title": "Deep Dive Into Anime with Justin Critchfield", "published": "2020-03-04T23:50:39.000Z", "duration": 1200, "explicit": false, "enclosure": { "filesize": 34157930, "type": "audio/mpeg", "url": "https://feeds.soundcloud.com/stream/770916088-user-736900638-dumpcast-episode-2.mp3" }, "image": "https://i1.sndcdn.com/artworks-LC9BVHRd50LWU63V-QDTY6A-t3000x3000.jpg", "links": [] }, { "description": "RIP bass", "episodeId": "b1196856cbd5769d5a8dffccc43a5329", "guid": "tag:soundcloud,2010:tracks/764834428", "title": "pilot", "published": "2020-02-22T15:52:20.000Z", "duration": 1200, "explicit": false, "enclosure": { "filesize": 10385718, "type": "audio/x-m4a", "url": "https://feeds.soundcloud.com/stream/764834428-user-736900638-dumpcast-episode-1.m4a" }, "image": "https://i1.sndcdn.com/artworks-LC9BVHRd50LWU63V-QDTY6A-t3000x3000.jpg", "links": [] }], "opts": { "id": "dumpcast", "feedId": "ada08cfc02b8c664a32e5f9cd3ba0390", "href": "https://feeds.soundcloud.com/users/soundcloud:users:784452757/sounds.rss", "slug": "dumpcast", "backgroundColor": "#060606", "fontColor": "#eff6fd", "primaryColor": "#FE9C30", "secondaryColor": "#FF595D", "publisher": null, "imageUrl": null, "faviconUrl": null, "itunesId": "1561702231", "googleAnalyticsId": null }, "feedId": "ada08cfc02b8c664a32e5f9cd3ba0390", "title": "dumpcast", "author": "Dumpster Fire", "owner": { "name": "dumpsterfiremusic", "email": "other.spencersolberg@outlook.com" }, "href": "https://feeds.soundcloud.com/users/soundcloud:users:784452757/sounds.rss", "description": "Podcast by Dumpster Fire", "category": ["Religion & Spirituality"], "image": "https://i1.sndcdn.com/avatars-LC9BVHRd50LWU63V-QDTY6A-original.jpg", "websiteUrl": "https://soundcloud.com/user-736900638" }, "publisher": null, "customColors": { "backgroundColor": "#060606", "fontColor": "#eff6fd", "primaryColor": "#FE9C30", "secondaryColor": "#FF595D" } };
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+  </script>
+
+</body>
+
+</html>
