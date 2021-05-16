@@ -30,3 +30,11 @@ nav a {
   color: white;
   cursor: pointer;
 }
+
+@font-face {
+  font-family: "Dumpster Font";
+  src: url("https://file.coffee/u/wjbUplcu2sXPDi.ttf") format("truetype");
+}
+.dumpster-font {
+  font-family: "Dumpster Font", Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+}

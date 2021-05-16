@@ -22,9 +22,9 @@
 
 <Router>
   <header>
-    <h1>
+    <h1 id="dumpster-header" class="dumpster-font">
       <i class="fas fa-dumpster-fire" />
-      Dumpster Fire
+      DUMPSTER FIRE
     </h1>
     <h5>Thanks for reaching out!</h5>
 
@@ -52,4 +52,7 @@
 <Footer />
 
 <style>
+#dumpster-header {
+  font-size: 10vw;
+}
 </style>
