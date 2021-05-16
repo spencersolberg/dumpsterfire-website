@@ -1,13 +1,15 @@
 <script>
-function repion() {
-  let ionicons = document.querySelectorAll('ion-icon');
-  ionicons.forEach(icon => {
-    let properTitle = icon.getAttribute('title');
-    if (properTitle) {
-      icon.shadowRoot.querySelector('.icon-inner svg title').innerHTML = properTitle
-    }
-  });
-}
+  function repion() {
+    let ionicons = document.querySelectorAll("ion-icon");
+    ionicons.forEach((icon) => {
+      let properTitle = icon.getAttribute("title");
+      if (properTitle) {
+        icon.shadowRoot.querySelector(
+          ".icon-inner svg title"
+        ).innerHTML = properTitle;
+      }
+    });
+  }
 </script>
 
 <footer>
@@ -18,7 +20,7 @@ function repion() {
         class="logo-instagram"
         title="Instagram"
       >
-        <ion-icon name="logo-instagram" title="Instagram"/>
+        <ion-icon name="logo-instagram" title="Instagram" />
       </a>
     </li>
     <li>
@@ -85,8 +87,17 @@ function repion() {
       </a>
     </li>
     <li>
-      <a href="https://honk.me/dumpsterfire" class="logo-honk" title="Logo Honk">
+      <a
+        href="https://honk.me/dumpsterfire"
+        class="logo-honk"
+        title="Logo Honk"
+      >
         <ion-icon src="images/honk.svg" />
+      </a>
+    </li>
+    <li>
+      <a href="mailto:spencersolberg@dumpster.fr" class="logo-mail">
+        <ion-icon name="mail-outline" />
       </a>
     </li>
   </ul>
@@ -143,6 +154,10 @@ function repion() {
 
   .logo-honk:hover {
     color: #018dff;
+  }
+
+  .logo-mail:hover {
+    color: #ead8b7;
   }
 
   /* ion-icon {
