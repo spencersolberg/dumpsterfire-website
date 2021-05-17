@@ -38,7 +38,7 @@
         class="logo-discord"
         title="Discord"
       >
-        <ion-icon name="logo-discord" />
+        <ion-icon src="images/Discord-Logo-White.svg" />
       </a>
     </li>
     <li>
@@ -129,7 +129,7 @@
   }
 
   .logo-discord:hover {
-    color: #7289da;
+    color: #5865F2;
   }
 
   .logo-twitter:hover {
