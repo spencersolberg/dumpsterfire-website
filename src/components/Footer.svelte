@@ -38,7 +38,7 @@
         class="logo-discord"
         title="Discord"
       >
-        <ion-icon src="images/Discord-Logo-White.svg" />
+        <ion-icon src="images/discord.svg" />
       </a>
     </li>
     <li>
@@ -160,7 +160,5 @@
     color: #ead8b7;
   }
 
-  /* ion-icon {
-    pointer-events: none;
-  } */
+
 </style>
