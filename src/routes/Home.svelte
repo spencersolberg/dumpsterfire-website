@@ -51,7 +51,9 @@
       >Dumpcast</Link
     > and the Dumpster Fire Mask Raffle:
   </p>
-  <MaskRaffle />
+  <div style="margin-left:auto;margin-right:auto">
+  <MaskRaffle/>
+</div>
 </main>
 
 <style>

@@ -38,3 +38,7 @@ nav a {
 .dumpster-font {
   font-family: "Dumpster Font", Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
 }
+
+#instagram-embed-0 {
+  margin: auto !important;
+}

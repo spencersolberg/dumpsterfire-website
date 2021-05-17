@@ -1,4 +1,3 @@
-<script async src="https://www.instagram.com/embed.js"></script>
 
 <blockquote
   class="instagram-media"
@@ -7,6 +6,8 @@
   data-instgrm-version="13"
   style="align-content:center; inline:true; background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin-left: auto; margin-right: auto; display: block; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"
 >
+<script async src="https://www.instagram.com/embed.js"> </script>
+
   <div style="padding:16px;">
     <a
       href="https://www.instagram.com/tv/CFcicEKB04Q/?utm_source=ig_embed&amp;utm_campaign=loading"
