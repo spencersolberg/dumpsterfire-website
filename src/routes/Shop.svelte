@@ -11,3 +11,9 @@
 <figcaption>Did someone say hoodies? We got 'em! All that and more at <a href="https://shop.dumpster.fr">shop.dumpster.fr</a>!</figcaption>
 </figure>
 <p>Dumpster Fire makes zero profit from any purchases and all sales/orders are handled by Spreadshirt.</p>
+
+<style>
+    img {
+        opacity: 1 !important;
+    }
+</style>
