@@ -40,7 +40,7 @@
         ><div class="routelink">Dumpcast</div></Link
       >
       <Link to="/shop" onmousedown="part.confetti(this)"
-      ><div class="routelink">Dumpcast</div></Link>
+      ><div class="routelink">Shop</div></Link>
       <!-- svelte-ignore a11y-missing-attribute -->
       <a><div class="routelink" on:click={scrollToBottom}>Social Media</div></a>
     </nav>
