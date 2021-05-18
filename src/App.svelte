@@ -52,7 +52,7 @@
     <Route path="/shop" component={Shop} />
   </div>
 </Router>
-
+<div id="myShop"></div>
 <Footer />
 
 <style>
