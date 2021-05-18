@@ -27,6 +27,37 @@
     if (window.outerWidth > window.outerHeight) return;
     document.querySelector(".top").scrollIntoView({behavior: "smooth"});
   }
+
+  const animateCSS = (element, animation, prefix = 'animate__') => {
+  // We create a Promise and return it
+  new Promise((resolve, reject) => {
+    const animationName = `${prefix}${animation}`;
+    const node = document.querySelector(element);
+
+    node.classList.add(`${prefix}animated`, animationName);
+
+    // When the animation ends, we clean the classes and resolve the Promise
+    function handleAnimationEnd(event) {
+      event.stopPropagation();
+      node.classList.remove(`${prefix}animated`, animationName);
+      resolve('Animation ended');
+    }
+
+    node.addEventListener('animationend', handleAnimationEnd, {once: true});
+  });
+}
+  const shake = (element) => {
+    animateCSS(element, "tada");
+     
+      setTimeout(() => {
+        shake(element);
+      }, 8000);
+    
+  };
+
+  window.onload = () => {
+    shake("#shop-button");
+  }
 </script>
 
 <Router>
@@ -50,7 +81,7 @@
       >
       <!-- <Link to="/shop" onmousedown="party.confetti(this)"
       > -->
-      <a href="https://shop.dumpster.fr"><div class="routelink"><i class="fas fa-shopping-bag"></i> Shop</div></a>
+      <a id="shop-button" href="https://shop.dumpster.fr"><div class="routelink"><i class="fas fa-shopping-bag"></i> Shop</div></a>
     <!-- </Link> -->
       <!-- svelte-ignore a11y-missing-attribute -->
       <a><div class="routelink" on:click={scrollToBottom}><i class="fas fa-user-friends"></i> Social Media</div></a>
@@ -77,10 +108,12 @@
     display:flex;
     justify-content: center; 
     flex-direction: column;
-  }
+    }
+    
+    header {
+      text-align: left;
+    }
   
   }
 
-  
-  
 </style>
