@@ -3,6 +3,7 @@
   import Home from "./routes/Home.svelte";
   import Music from "./routes/Music.svelte";
   import Dumpcast from "./routes/Dumpcast.svelte";
+  import Shop from "./routes/Shop.svelte";
 
   import Footer from "./components/Footer.svelte";
   (function () {
@@ -38,6 +39,8 @@
       <Link to="/dumpcast" onmousedown="party.confetti(this)"
         ><div class="routelink">Dumpcast</div></Link
       >
+      <Link to="/shop" onmousedown="part.confetti(this)"
+      ><div class="routelink">Dumpcast</div></Link>
       <!-- svelte-ignore a11y-missing-attribute -->
       <a><div class="routelink" on:click={scrollToBottom}>Social Media</div></a>
     </nav>
@@ -46,6 +49,7 @@
     <Route path="/" component={Home} />
     <Route path="/music" component={Music} />
     <Route path="/dumpcast" component={Dumpcast} />
+    <Route path="/shop" component={Shop} />
   </div>
 </Router>
 
