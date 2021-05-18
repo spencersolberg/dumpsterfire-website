@@ -55,4 +55,16 @@
   #dumpster-header {
     font-size: 10vw;
   }
+
+  @media screen and (max-aspect-ratio: 1/1) {
+    nav {
+    display:flex;
+    justify-content: center; 
+    flex-direction: column;
+  }
+  
+  }
+
+  
+  
 </style>

@@ -2,8 +2,21 @@ body {
   font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
 }
 
-* {
+/* *, *::before, *::after {
+  box-sizing:border-box;
+} */
+
+/* header {
   box-sizing: border-box;
+  /* overflow: -moz-hidden-unscrollable;
+}*/
+
+header {
+  box-sizing: border-box;
+}
+
+nav a{
+  margin-right: 0 !important;
 }
 
 h1,
