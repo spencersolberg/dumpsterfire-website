@@ -5,6 +5,9 @@
   import Dumpcast from "./routes/Dumpcast.svelte";
   import Shop from "./routes/Shop.svelte";
 
+  import smoothscroll from 'smoothscroll-polyfill';
+  smoothscroll.polyfill();
+
   import Footer from "./components/Footer.svelte";
   (function () {
     var ticker = document.createElement("script");
@@ -17,34 +20,43 @@
   })();
 
   const scrollToBottom = () => {
-    window.scrollTo(0, document.body.scrollHeight);
+    window.scroll({ top: document.body.scrollHeight, left: 0, behavior: 'smooth' });
   };
+
+  const scrollToTop = () => {
+    if (window.outerWidth > window.outerHeight) return;
+    document.querySelector(".top").scrollIntoView({behavior: "smooth"});
+  }
 </script>
 
 <Router>
   <header>
-    <h1>
+    <a href="/" style="text-decoration:none;"><h1>
       <i class="fas fa-dumpster-fire" />
       Dumpster Fire
     </h1>
+  </a>
     <h5>Thanks for reaching out!</h5>
 
-    <nav>
-      <Link to="/" onmousedown="party.confetti(this)"
-        ><div class="routelink">Home</div></Link
+    <nav> 
+      <Link to="/" on:click={scrollToTop} onmousedown="party.confetti(this)"
+        ><div class="routelink"><i class="fas fa-home"></i> Home</div></Link
       >
-      <Link to="/music" onmousedown="party.confetti(this)"
-        ><div class="routelink">Music</div></Link
+      <Link to="/music" on:click={scrollToTop} onmousedown="party.confetti(this)"
+        ><div class="routelink"><i class="fas fa-music"></i> Music</div></Link
       >
-      <Link to="/dumpcast" onmousedown="party.confetti(this)"
-        ><div class="routelink">Dumpcast</div></Link
+      <Link to="/dumpcast" on:click={scrollToTop} onmousedown="party.confetti(this)"
+        ><div class="routelink"><i class="fas fa-microphone"></i> Dumpcast</div></Link
       >
-      <Link to="/shop" onmousedown="party.confetti(this)"
-      ><div class="routelink">Shop</div></Link>
+      <!-- <Link to="/shop" onmousedown="party.confetti(this)"
+      > -->
+      <a href="https://shop.dumpster.fr"><div class="routelink"><i class="fas fa-shopping-bag"></i> Shop</div></a>
+    <!-- </Link> -->
       <!-- svelte-ignore a11y-missing-attribute -->
-      <a><div class="routelink" on:click={scrollToBottom}>Social Media</div></a>
+      <a><div class="routelink" on:click={scrollToBottom}><i class="fas fa-user-friends"></i> Social Media</div></a>
     </nav>
   </header>
+  <div class="top"></div>
   <div>
     <Route path="/" component={Home} />
     <Route path="/music" component={Music} />
