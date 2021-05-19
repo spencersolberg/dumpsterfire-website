@@ -59,3 +59,14 @@ nav a {
 img {
   opacity: 1 !important;
 }
+
+.share-button {
+  color:#212121;
+  cursor:pointer;
+}
+
+@media (prefers-color-scheme: dark) {
+  .share-button {
+    color: #DCDCDC;
+  }
+}

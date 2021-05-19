@@ -1,6 +1,11 @@
 <main>
 
-<h2>Thanks for shopping with Dumpster Fire!</h2>
+<h2>Thanks for shopping with Dumpster Fire! <ion-icon class="share-button" name="share-outline" size="large" on:click={() => {
+    navigator.share({
+      title: "Dumpster Fire - Shop",
+      url: location.href
+    });
+  }}/></h2>
 
 <h4>The Official Shop is now Open!</h4>
 <figure>

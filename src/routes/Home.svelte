@@ -4,7 +4,12 @@
 </script>
 
 <main>
-  <h2>Here's the situation!</h2>
+  <h2>Here's the situation! <ion-icon class="share-button" name="share-outline" size="large" on:click={() => {
+    navigator.share({
+      title: "Dumpster Fire - Home",
+      url: location.href
+    });
+  }} /></h2>
   <figure>
     <img
       class="dumpsterfirewithjustin"

@@ -1,5 +1,10 @@
 <main>
-  <h2>Dumpcast is the official Dumpster Fire podcast!</h2>
+  <h2>Dumpcast is the official Dumpster Fire podcast! <ion-icon class="share-button" name="share-outline" size="large" on:click={() => {
+    navigator.share({
+      title: "Dumpster Fire - Dumpcast",
+      url: location.href
+    });
+  }}/></h2>
   <br>
   <iframe title="Dumpcast" seamless src="/dumpcast-iframe.html" frameborder="0" width="100%" height="1000em"></iframe>
   <!-- <h2>Apple Podcasts</h2>
