@@ -70,22 +70,24 @@
   </a>
     <h5>Thanks for reaching out!</h5>
 
-    <nav> 
+    <nav> <span>
       <Link to="/" on:click={scrollToTop} onmousedown="party.confetti(this)"
         ><div class="routelink"><i class="fas fa-home"></i> Home</div></Link
       >
       <Link to="/music" on:click={scrollToTop} onmousedown="party.confetti(this)"
         ><div class="routelink"><i class="fas fa-music"></i> Music</div></Link
-      >
-      <Link to="/dumpcast" on:click={scrollToTop} onmousedown="party.confetti(this)"
+      ></span>
+      <span><Link to="/dumpcast" on:click={scrollToTop} onmousedown="party.confetti(this)"
         ><div class="routelink"><i class="fas fa-microphone"></i> Dumpcast</div></Link
       >
       <!-- <Link to="/shop" onmousedown="party.confetti(this)"
       > -->
       <a id="shop-button" href="https://shop.dumpster.fr"><div class="routelink"><i class="fas fa-shopping-bag"></i> Shop</div></a>
+    </span>
     <!-- </Link> -->
+    <span>
       <!-- svelte-ignore a11y-missing-attribute -->
-      <a><div class="routelink" on:click={scrollToBottom}><i class="fas fa-user-friends"></i> Social Media</div></a>
+      <a><div class="routelink" on:click={scrollToBottom}><i class="fas fa-user-friends"></i> Social Media</div></a></span>
     </nav>
   </header>
   <div class="top"></div>
@@ -112,7 +114,7 @@
     }
     
     header {
-      text-align: left;
+      text-align: center;
     }
   
   }
