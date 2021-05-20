@@ -9,6 +9,17 @@
       }
     });
   }
+
+
+  let promo;
+
+  fetch("https://dumpster.fr/api/shop/promo")
+    .then(res => {
+      res.json()
+        .then(j => promo = j)
+        .catch(err => console.error(err));
+    })
+    .catch(err => console.error(err));
 </script>
 
 <footer>
@@ -105,6 +116,14 @@
       <ion-icon size="large" name="mail-outline" />
     </a>
   </div>
+  {#if promo}
+  <nav id="promo-nav">
+  <a id="promo-button" href={"https://shop.dumpster.fr/&couponCode=" + promo.code}>{promo.description}!</a>
+  
+</nav>
+  
+  {/if}
+
   Dumpster Fire © 2021
 </footer>
 
@@ -171,4 +190,13 @@
   .container a {
     padding: 1em;
   }
+
+  #promo-nav {
+    padding-top: 0;
+  }
+  #promo-button {
+    background-color: rgb(255, 165, 0);
+    color: white !important;
+  }
+
 </style>

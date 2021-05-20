@@ -33,7 +33,7 @@
     Dumpster Fire was founded January, 2020. Since then, it has grown to become
     a well-established brand internationally. The current roster includes:
   </p>
-  <ul style="cursor:default" spellcheck="false" contenteditable="true">
+  <ul spellcheck="false" contenteditable="true">
     <li>Samuel Schoonover</li>
     <li>Spencer Solberg</li>
     <li>Spencer Sveen</li>
