@@ -104,10 +104,6 @@
     color: white !important;
   }
 
-  #random-product-img {
-    width: 100%
-  }
-
   #rpi-con {
     display: flex;
     justify-content: center;
