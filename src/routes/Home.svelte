@@ -76,7 +76,7 @@
   {#if sellables}
   <a href="https://shop.dumpster.fr" style="text-decoration:none"><h2>The Dumpster Fire Shop</h2></a>
   <figure><a href="https://shop.dumpster.fr"><div id="rpi-con">
-  <img id="random-product-img" src={sellables.sellables[Math.floor(Math.random() * sellables.sellables.length)].previewImage.url} alt="A random Dumpster Fire product" /></div></a>
+  <img loading="lazy" id="random-product-img" src={sellables.sellables[Math.floor(Math.random() * sellables.sellables.length)].previewImage.url} alt="A random Dumpster Fire product" /></div></a>
   <figcaption>You can find this product and {sellables.count - 1} more at <a href="https://shop.dumpster.fr">shop.dumpster.fr</a>!</figcaption>
 </figure>
 <p>The official Dumpster Fire Shop is now open! Shop for hoodies, t-shirts, accessories, and more at <a href="https://shop.dumpster.fr">shop.dumpster.fr</a>!</p>
