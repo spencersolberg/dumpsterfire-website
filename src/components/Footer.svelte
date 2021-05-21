@@ -26,7 +26,7 @@
   <div class="container">
     <a
       target="_blank"
-      href="https://www.instagram.com/dumpsterfiremusic"
+      href="https://link.dumpster.fr/instagram"
       class="logo-instagram"
       title="Instagram"
     >
@@ -35,7 +35,7 @@
 
     <a
       target="_blank"
-      href="https://www.youtube.com/channel/UCUvO8Nw5ijE2XVi110XOw7Q"
+      href="https://link.dumpster.fr/youtube"
       class="logo-youtube"
       title="YouTube"
     >
@@ -44,7 +44,7 @@
 
     <a
       target="_blank"
-      href="https://discord.gg/A5sdKJt6Ah"
+      href="https://link.dumpster.fr/discord"
       class="logo-discord"
       title="Discord"
     >
@@ -53,7 +53,7 @@
 
     <a
       target="_blank"
-      href="https://twitter.com/dumpfiremusic"
+      href="https://link.dumpster.fr/twitter"
       class="logo-twitter"
       title="Twitter"
     >
@@ -62,7 +62,7 @@
 
     <a
       target="_blank"
-      href="https://www.tiktok.com/@dumpsterfiremusic"
+      href="https://link.dumpster.fr/tiktok"
       class="logo-tiktok"
       title="TikTok"
     >
@@ -71,7 +71,7 @@
 
     <a
       target="_blank"
-      href="https://snapchat.com/add/dumpfiremusic"
+      href="https://link.dumpster.fr/snapchat"
       class="logo-snap"
       title="Snapchat"
     >
@@ -80,7 +80,7 @@
 
     <a
       target="_blank"
-      href="https://www.reddit.com/r/dumpsterfiremusic"
+      href="https://link.dumpster.fr/reddit"
       class="logo-reddit"
       title="Reddit"
     >
@@ -89,7 +89,7 @@
 
     <a
       target="_blank"
-      href="https://twitch.tv/dumpsterfirestreams"
+      href="https://link.dumpster.fr/twitch"
       class="logo-twitch"
       title="Twitch"
     >
@@ -98,7 +98,7 @@
 
     <a
       target="_blank"
-      href="https://honk.me/dumpsterfire"
+      href="https://link.dumpster.fr/honk"
       class="logo-honk"
       title="Logo Honk"
     >
@@ -108,7 +108,7 @@
     <a
       target="blank"
       class="logo-soundcloud"
-      href="https://soundcloud.com/user-736900638"
+      href="https://link.dumpster.fr/soundcloud"
       ><ion-icon name="logo-soundcloud" size="large" /></a
     >
 
