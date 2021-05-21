@@ -1,6 +1,20 @@
 <script>
   import MaskRaffle from "../components/embeds/MaskRaffle.svelte";
   import { Link } from "svelte-routing";
+
+  let sellables;
+
+  fetch("https://dumpster.fr/api/shop/sellables")
+    .then(res => {
+      res.json()
+        .then(j => sellables = j)
+        .catch(err => console.error(err));
+    })
+    .catch(err => console.error(err));
+
+  // let randomProduct = sellables.sellables[Math.floor(Math.random() * sellables.sellables.length)];
+
+  
 </script>
 
 <main>
@@ -58,6 +72,19 @@
   </p>
   <div style="margin-left:auto;margin-right:auto">
   <MaskRaffle/>
+
+  {#if sellables}
+  <a href="https://shop.dumpster.fr" style="text-decoration:none"><h2>The Dumpster Fire Shop</h2></a>
+  <figure><a href="https://shop.dumpster.fr"><div id="rpi-con">
+  <img id="random-product-img" src={sellables.sellables[Math.floor(Math.random() * sellables.sellables.length)].previewImage.url} alt="A random Dumpster Fire product" /></div></a>
+  <figcaption>You can find this product and {sellables.count - 1} more at <a href="https://shop.dumpster.fr">shop.dumpster.fr</a>!</figcaption>
+</figure>
+<p>The official Dumpster Fire Shop is now open! Shop for hoodies, t-shirts, accessories, and more at <a href="https://shop.dumpster.fr">shop.dumpster.fr</a>!</p>
+<p>Dumpster Fire makes zero profit from any purchases and all sales/orders are handled by Spreadshirt.</p>
+<nav id="my-nav-2">
+  <a id="shop-button-2" href="https://shop.dumpster.fr/"><i class="fas fa-shopping-bag"></i> Shop now!</a>
+</nav>
+  {/if}
 </div>
 </main>
 
@@ -67,5 +94,22 @@
   }
   .dumpsterfirewithjustin {
     aspect-ratio: 1080/898;
+  }
+#my-nav-2 {
+  display: flex;
+  justify-content: center;
+}
+  #shop-button-2 {
+    background-color: rgb(255, 165, 0);
+    color: white !important;
+  }
+
+  #random-product-img {
+    width: 100%
+  }
+
+  #rpi-con {
+    display: flex;
+    justify-content: center;
   }
 </style>
