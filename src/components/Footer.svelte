@@ -13,7 +13,7 @@
 
   let promo;
 
-  fetch("https://dumpster.fr/api/shop/promo")
+  fetch("https://api.dumpster.fr/shop/promo")
     .then(res => {
       res.json()
         .then(j => promo = j)

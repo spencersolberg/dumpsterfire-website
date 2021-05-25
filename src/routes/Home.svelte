@@ -4,7 +4,7 @@
 
   let sellables;
 
-  fetch("https://dumpster.fr/api/shop/sellables")
+  fetch("https://api.dumpster.fr/shop/sellables")
     .then(res => {
       res.json()
         .then(j => sellables = j)
