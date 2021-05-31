@@ -12,11 +12,14 @@
 
 
   let promo;
-
+  let isPromo;
   fetch("https://api.dumpster.fr/shop/promo")
     .then(res => {
       res.json()
-        .then(j => promo = j)
+        .then(j => {
+          promo = j;
+          isPromo = !!promo.description;
+         })
         .catch(err => console.error(err));
     })
     .catch(err => console.error(err));
@@ -116,7 +119,7 @@
       <ion-icon size="large" name="mail-outline" />
     </a>
   </div>
-  {#if promo}
+  {#if isPromo}
   <nav id="promo-nav">
   <a id="promo-button" href={"https://shop.dumpster.fr/&couponCode=" + promo.code}>{promo.description}!</a>
   
