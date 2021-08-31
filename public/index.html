@@ -27,10 +27,32 @@
 	<script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
 	<script defer src="https://kit.fontawesome.com/13b6cd8b55.js" crossorigin="anonymous"></script>
-	<script src="https://unpkg.com/party-js@2.0.0-0/bundle/party.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
 	<script defer src='/build/bundle.js'></script>
 	<script defer src="https://unpkg.com/share-api-polyfill/dist/share-min.js"></script>
 	<script src="gamecontroller.min.js"></script>
+	<script>
+		let mouseX;
+		let mouseY;
+
+		const onMouseMove = (e) => {
+			mouseX = e.pageX;
+			mouseY = e.pageY;
+		}
+		const onKeyDown = (e) => {
+			if (e.code == "KeyC") { // soonr
+				party.confetti(new party.Rect(mouseX, mouseY, 1, 1));
+			} 
+		}
+		document.addEventListener("mousemove", onMouseMove);
+		document.addEventListener("keydown", onKeyDown);
+	</script>
+	<script type="text/javascript">
+		window._mNHandle = window._mNHandle || {};
+		window._mNHandle.queue = window._mNHandle.queue || [];
+		medianet_versionId = "3121199";
+	</script>
+	<script src="https://contextual.media.net/dmedianet.js?cid=8CU891881" async="async"></script>
 </head>
 
 <body>
