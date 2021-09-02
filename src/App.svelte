@@ -132,16 +132,6 @@ gameControl.on("connect", (gamepad) => {
     <Route path="/shop" component={Shop} />
   </div>
 </Router>
-<div id="271863207">
-  <script type="text/javascript">
-      try {
-          window._mNHandle.queue.push(function (){
-              window._mNDetails.loadTag("271863207", "970x250", "271863207");
-          });
-      }
-      catch (error) {}
-  </script>
-</div>
 <div id="myShop" />
 <Footer />
 
