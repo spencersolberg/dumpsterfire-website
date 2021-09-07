@@ -80,7 +80,7 @@
   <figcaption>You can find this product and {sellables.count - 1} more at <a href="https://shop.dumpster.fr">shop.dumpster.fr</a>!</figcaption>
 </figure>
 <p>The official Dumpster Fire Shop is now open! Shop for hoodies, t-shirts, accessories, and more at <a href="https://shop.dumpster.fr">shop.dumpster.fr</a>!</p>
-<p>Dumpster Fire makes zero profit from any purchases and all sales/orders are handled by Spreadshirt.</p>
+<p>All sales/orders are handled by Spreadshirt.</p>
 <nav id="my-nav-2">
   <a id="shop-button-2" href="https://shop.dumpster.fr/"><i class="fas fa-shopping-bag"></i> Shop now!</a>
 </nav>
